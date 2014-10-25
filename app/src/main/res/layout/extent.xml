@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
@@ -11,12 +11,13 @@
         android:layout_alignTop="@+id/extent_tvHeader"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="0dp">
+        android:layout_marginTop="10dp">
 
-        <RelativeLayout
+        <LinearLayout
             android:orientation="vertical"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
+            android:padding="25dp"
             android:id="@+id/">
 
             <TextView
@@ -27,11 +28,16 @@
                 android:id="@+id/extent_tvHeader"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="31dp" />
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textSize="15dp"
                 android:text="@string/extent_tvSubheader"
@@ -48,15 +54,23 @@
                 android:id="@+id/extent_tvSubheader2"
                 android:textSize="15dp"
                 android:layout_below="@+id/extent_tvSubheader"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                />
 
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="20dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Business Proposal"
                 android:id="@+id/extent_tvContent1"
-                android:layout_marginTop="36dp"
                 android:layout_below="@+id/extent_cbCheck3"
                 android:layout_alignStart="@+id/extent_tvText1" />
 
@@ -68,8 +82,12 @@
                 android:layout_alignParentStart="false"
                 android:layout_alignParentEnd="false"
                 android:layout_toEndOf="@id/extent_tvContent1"
-                android:layout_marginLeft="100dp"
+                android:layout_marginLeft="115dp"
                 android:layout_alignBaseline="@+id/extent_tvContent1" />
+        </LinearLayout>
+
+
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -81,17 +99,33 @@
                 android:layout_alignStart="@+id/extent_tvContent1"
                 android:textSize="10dp"
                 android:maxWidth="250dp"
+                android:layout_gravity="left"
+                android:gravity="left"
                 android:layout_marginTop="5dp" />
 
+
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="10dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Website"
                 android:id="@+id/extent_tvContent2"
-                android:layout_marginTop="75dp"
-                android:layout_alignStart="@id/extent_tvContent1"
-                android:layout_below="@+id/extent_tvContent1" />
+              />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/extent_cbCheck2"
+                android:checked="false"
+                android:layout_marginLeft="200dp"
+             />
+
+            </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -99,18 +133,10 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="@string/extent_tvText2"
                 android:id="@+id/extent_tvText2"
-                android:layout_alignStart="@id/extent_tvContent2"
-                android:layout_marginTop="100dp"
+
+                android:layout_marginTop="1dp"
                 android:textSize="10dp" />
 
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/extent_cbCheck2"
-                android:checked="false"
-                android:layout_toEndOf="@id/extent_tvContent2"
-                android:layout_above="@+id/extent_tvText1"
-                android:layout_alignStart="@+id/extent_cbCheck1" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -118,30 +144,106 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Applications:"
                 android:id="@+id/extent_tvContent3"
-                android:layout_alignBottom="@+id/extent_tvContent2"
-                android:layout_alignStart="@+id/extent_tvContent2" />
+                android:layout_marginTop="15dp"/>
 
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Windows"
+                android:layout_marginTop="5dp"
+                android:textSize="10dp"
+
+                />
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/extent_cbCheck3"
                 android:checked="false"
-                android:layout_alignBaseline="@+id/extent_tvText2"
-                android:layout_alignBottom="@+id/extent_tvText2"
-                android:layout_toEndOf="@+id/extent_cbCheck1" />
+                android:layout_marginLeft="223dp"
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="@string/extent_tvText3"
-                android:id="@+id/extent_tvText3"
-                android:layout_alignStart="@id/extent_tvContent2"
-                android:layout_marginTop="10dp"
-                android:textSize="10dp"
-                android:layout_below="@+id/extent_tvContent2" />
 
-        </RelativeLayout>
+                />
+</LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Android"
+                    android:layout_marginTop="5dp"
+                    android:textSize="10dp"
+
+                    />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/extent_cbCheck3"
+                    android:checked="false"
+                    android:layout_marginLeft="229dp"
+
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="iOS"
+                    android:layout_marginTop="5dp"
+                    android:textSize="10dp"
+                    />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/extent_cbCheck3"
+                    android:checked="false"
+                    android:layout_marginLeft="248dp"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Applications:"
+                    android:layout_marginTop="15dp"/>
+                
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/extent_cbCheck3"
+                    android:checked="false"
+                    android:layout_marginLeft="248dp"
+                    />
+
+
+
+
+                </LinearLayout>
+
+
+
+        </LinearLayout>
     </ScrollView>
 
-</RelativeLayout>
+</LinearLayout>

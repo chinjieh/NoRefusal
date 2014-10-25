@@ -98,7 +98,7 @@
                 />
 
             <Button
-                android:layout_width="341dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:text="Next"
                 android:id="@+id/main_bNext"
