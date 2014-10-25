@@ -3,7 +3,9 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
-    android:paddingTop="20dp">
+    android:paddingTop="25dp"
+    android:background="#DD4124"
+    >
 
     <ScrollView
         android:layout_width="match_parent"
@@ -24,7 +26,12 @@
                 android:text="Current Revelation Progress"
                 android:id="@+id/textView5"
                 android:textSize="25dp"
-                android:layout_marginLeft="20dp" />
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+
+                />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -33,7 +40,9 @@
                 android:id="@+id/main_tvProject"
                 android:textSize="15dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="4dp" />
+                android:layout_marginTop="20dp"
+                android:textColor="#ffffff"
+                />
 
             <ProgressBar
                 style="?android:attr/progressBarStyleHorizontal"
@@ -60,30 +69,42 @@
                 android:text="New Revelation?"
                 android:id="@+id/main_tvRevelation"
                 android:textSize="25dp"
-                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:layout_marginTop="20dp"
                 android:layout_gravity="left" />
 
             <EditText
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/main_etRevelation"
                 android:hint="Title of Revelation"
-                android:layout_marginLeft="20dp" />
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+
+                />
 
             <EditText
-                android:layout_width="342dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/main_etCatchPhrase"
                 android:hint="Catch phrase"
-                android:layout_marginLeft="20dp" />
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                />
 
             <Button
                 android:layout_width="341dp"
                 android:layout_height="wrap_content"
                 android:text="Next"
                 android:id="@+id/main_bNext"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="5dp" />
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -91,14 +112,20 @@
                 android:text="Past Revelations"
                 android:id="@+id/textView2"
                 android:textSize="25dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="15dp" />
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:textColor="#ffffff"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView4"
-                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:layout_gravity="center"
                 android:text="Reverse Flushing Toilet Bowl" />
 
         </LinearLayout>
