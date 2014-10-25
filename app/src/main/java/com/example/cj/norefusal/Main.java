@@ -18,11 +18,7 @@ public class Main extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-<<<<<<< HEAD
         next.setOnClickListener(new View.OnClickListener() {
-=======
-    }
->>>>>>> origin/master
 
 
             @Override
@@ -35,4 +31,3 @@ public class Main extends Activity {
         });
     }
 }
-
