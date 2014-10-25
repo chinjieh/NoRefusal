@@ -25,10 +25,7 @@ public class Extent extends Activity {
         setContentView(R.layout.extent);
 
         Button next = (Button) findViewById(R.id.bExtent);
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/master
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
