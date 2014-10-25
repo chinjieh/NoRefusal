@@ -80,7 +80,7 @@
         android:layout_gravity="center"
         android:textAlignment="center"
         android:layout_marginTop="40dp"
-        android:text="Start another great idea!"
+        android:text="Start another Revelation!"
         android:background="@android:color/white"
         android:textSize="14sp"/>
 

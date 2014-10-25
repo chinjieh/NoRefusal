@@ -11,14 +11,16 @@
         android:id="@+id/etCommands"
         android:layout_width="fill_parent"
         android:layout_height="200dp"
-        android:hint="Enter your description here!\n\nRemember!\nMake it as clear as possible!"
+        android:hint="Enter your description here.\n\nThis is where you flesh out the finer details of your Revelation, to help us give you what you really want."
         android:layout_gravity="center" 
         android:textAlignment="center"
         android:gravity="center"
         android:layout_marginTop="25dp"
         android:background="#ffffff"
         android:textColour="#000000"
-        />
+        android:textSize = "15dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" />
 
     <TextView
         android:id="@+id/tvSupporting"
@@ -27,7 +29,7 @@
         android:layout_marginTop="40dp"
         android:gravity="center"
         android:padding="14dp"
-        android:text="Upload your links to your supporting documents:"
+        android:text="Have supporting documents? \nProvide your links here:"
         android:textAlignment="center"
         android:textColor="@android:color/white"/>
 
