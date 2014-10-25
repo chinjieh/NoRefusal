@@ -117,22 +117,22 @@ public class Main extends Activity {
             JSONObject json = jsonParser.makeHttpRequest(url_create_product,
                     "POST", params);
 
-            // check for success tag
-            try {
-                int success = json.getInt(TAG_SUCCESS);
-
-                if (success == 1) {
-                    // successfully created product
-                    Log.d("SUCCESS", "anything");
-
-                    // closing this screen
-                    finish();
-                } else {
-                    // failed to create product
-                }
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
+            //check for success tag
+//            try {
+//                int success = json.getInt(TAG_SUCCESS);
+//
+//                if (success == 1) {
+//                    // successfully created product
+//                    Log.d("SUCCESS", "anything");
+//
+//                    // closing this screen
+//                    finish();
+//                } else {
+//                    // failed to create product
+//                }
+//            } catch (JSONException e) {
+//                e.printStackTrace();
+//            }
 
             return null;
         }
