@@ -83,7 +83,7 @@
         android:layout_marginTop="30dp"
         android:text="Next!" 
         android:textSize="17dp"
-        android:background="@android:color/white"
+        android:background="#ffffaffa"
         />
 
 </LinearLayout>

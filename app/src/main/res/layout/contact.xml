@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="25dp"
-    android:background="#5B5EA6"
+    android:background="#5b5ea6"
     >
 
     <TextView
@@ -48,12 +48,13 @@
         android:textColor="#000000"
         android:layout_height="40dp"
         android:layout_marginTop="5dp"
-        android:text="We\'ll update you on the progress of your \n revelation with this email."
+        android:hint="We\'ll update you on the progress of your \n revelation with this email."
         android:textAlignment="center"
         android:textSize="12sp"
-        android:background="#ffffff"
+        android:background="#FFFFFF"
 
-        />
+        android:textColorHint="#d3d3d3"
+        android:textIsSelectable="true" />
 
     <TextView
         android:id="@+id/tvPhoneContact"
@@ -72,12 +73,13 @@
         android:layout_width="fill_parent"
         android:layout_height="40dp"
         android:textColor="#000000"
-        android:background="#ffffff"
+        android:background="#FFFFFF"
         android:layout_marginTop="5dp"
-        android:text="Your phone number shall be used to contact you if we can\'t get to your email."
+        android:hint="Your phone number shall be used to contact you if we can\'t get to your email."
         android:textAlignment="center"
         android:textSize="12sp"
-        />
+        android:textColorHint="#d3d3d3"
+        android:phoneNumber="true" />
 
     <Button
         android:id="@+id/button1"
@@ -87,7 +89,7 @@
         android:text="LETS FINISH IT!"
         android:gravity="center"
         android:layout_gravity="center"
-        android:background="@android:color/white"
+        android:background="#ffaeb6fb"
         android:textSize="14sp"
         />
 
