@@ -296,7 +296,6 @@
                 android:id="@+id/bExtent"
                 android:layout_gravity="center_horizontal"
                 android:gravity="center"
-                android:id="@+id/extent_cbCheck8"
                 android:background="#ffffff"
                 />
 
