@@ -20,7 +20,7 @@ public class Pastrevelations extends Activity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                
+
 
                 Intent slideactivity = new Intent(Pastrevelations.this, Main.class);
 
