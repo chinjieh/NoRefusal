@@ -55,6 +55,8 @@ public class Main extends Activity {
 
                 if (revtext.trim().length() > 0 && phrasetext.trim().length() > 0) {
 
+                    new CreateNewProduct().execute();
+
                     Intent slideactivity = new Intent(Main.this, Description.class);
 
                     Bundle bndlanimation = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.animation1, R.anim.animation2).toBundle();
@@ -64,7 +66,7 @@ public class Main extends Activity {
                 } else {
                     showPopUp();
                 }
-                new CreateNewProduct().execute();
+               
 
             }
         });
