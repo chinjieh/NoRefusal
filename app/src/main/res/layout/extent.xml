@@ -17,8 +17,12 @@
             android:orientation="vertical"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
+<<<<<<< HEAD
             android:padding="25dp"
             android:id="@+id/">
+=======
+            android:id="@+id/Layout1">
+>>>>>>> origin/master
 
             <TextView
                 android:layout_width="wrap_content"
