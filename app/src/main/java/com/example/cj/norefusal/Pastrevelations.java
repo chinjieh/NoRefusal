@@ -1,6 +1,7 @@
 package com.example.cj.norefusal;
 
 import android.app.Activity;
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -19,8 +20,13 @@ public class Pastrevelations extends Activity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent a = new Intent(Pastrevelations.this, Main.class);
-                startActivity(a);
+                
+
+                Intent slideactivity = new Intent(Pastrevelations.this, Main.class);
+
+                Bundle bndlanimation = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.animation1, R.anim.animation2).toBundle();
+                startActivity(slideactivity, bndlanimation);
+
             }
         });
     }
