@@ -19,9 +19,9 @@ public class Pastrevelations extends Activity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent a = new Intent({Pastrevelations.this, Main.class);
+                Intent a = new Intent(Pastrevelations.this, Main.class);
                 startActivity(a);
             }
-        })
+        });
     }
 }
