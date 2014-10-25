@@ -1,6 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    >
+
+    <TextView
+        android:id="@+id/tvHeaderContact"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="Let us contact"
+        android:textSize="40sp"/>
+
+    <TextView
+        android:id="@+id/tvYouContact"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
+        android:text="YOU!"
+        android:textSize="60sp"/>
+
+    <TextView
+        android:id="@+id/tvEmailContact"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Emaill Address:"
+        android:textSize="20sp" />
+
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="So that we can update you on the progress!\n(Optional)"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        />
+
+    <TextView
+        android:id="@+id/tvPhoneContact"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:text="Phone No.:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="(IMPORTANT)\nSo that we can contact you!"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="LETS FINISH IT!"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="10sp"
+        />
 
 </LinearLayout>
