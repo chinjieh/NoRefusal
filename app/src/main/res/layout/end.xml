@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="130dp"
-        android:text="One Last Step..."
+        android:text="Congratulations!"
         android:textStyle="bold"
         android:textColor="@android:color/white"
         android:textAlignment="center"
@@ -27,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:text="Your dream is on its way to reality!"
+        android:text="Your dream is on its way to reality."
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="17sp" />
