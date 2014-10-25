@@ -3,6 +3,6 @@
     android:id="@+id/animation1"
     android:fromXDelta="100%p"
     android:toXDelta="0"
-    android:duration="500">
+    android:duration="200">
 
 </translate>
