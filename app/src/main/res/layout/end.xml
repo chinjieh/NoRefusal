@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="25dp"
-    android:background="#EFC050"
+    android:background="#efc050"
     >
 
     <TextView
@@ -59,7 +59,8 @@
         android:textAlignment="center"
         android:layout_marginTop="70dp"
         android:text="Return to Main Menu"
-        android:background="@android:color/white"
+        android:background="#ffffff"
+        android:textColor="#000000"
         android:textSize="14sp"/>
 
 </LinearLayout>
