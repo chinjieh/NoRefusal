@@ -14,11 +14,13 @@ public class Splash extends Activity {
         setContentView(R.layout.splash);
 
 
+
         Thread timer = new Thread() {
             public void run() {
 
                 try {
                     sleep(3500);
+
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 } finally {
