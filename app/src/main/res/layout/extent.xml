@@ -2,39 +2,25 @@
 <LinearLayout xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/scrollView"
-        android:layout_alignTop="@+id/extent_tvHeader"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="10dp">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#5B5EA6">
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-<<<<<<< HEAD
-            android:padding="25dp"
-            android:id="@+id/">
-=======
+            android:layout_height="wrap_content"
+            android:padding="20dp"
             android:id="@+id/Layout1">
->>>>>>> origin/master
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="How Far would we Go?"
-                android:id="@+id/extent_tvHeader"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="-5dp"
                 android:gravity="center"
                 android:layout_gravity="center"
+                android:textColor="#ffffff"
                 />
 
             <TextView
@@ -45,49 +31,41 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textSize="15dp"
                 android:text="@string/extent_tvSubheader"
-                android:id="@+id/extent_tvSubheader"
-                android:layout_marginTop="27dp"
-                android:layout_below="@+id/extent_tvHeader"
-                android:layout_centerHorizontal="true" />
+                android:textColor="#ffffff"
+                android:layout_marginTop="1dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="@string/extent_tvSubheader2"
-                android:id="@+id/extent_tvSubheader2"
                 android:textSize="15dp"
-                android:layout_below="@+id/extent_tvSubheader"
-                android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#ffffff"
                 />
 
 
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="10dp">
+
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Business Proposal"
-                android:id="@+id/extent_tvContent1"
-                android:layout_below="@+id/extent_cbCheck3"
-                android:layout_alignStart="@+id/extent_tvText1" />
+                android:textColor="#ffffff"/>
 
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/extent_cbCheck1"
                 android:checked="false"
-                android:layout_alignParentStart="false"
-                android:layout_alignParentEnd="false"
-                android:layout_toEndOf="@id/extent_tvContent1"
-                android:layout_marginLeft="115dp"
-                android:layout_alignBaseline="@+id/extent_tvContent1" />
+                android:layout_marginLeft="115dp" />
         </LinearLayout>
 
 
@@ -98,14 +76,12 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="@string/extent_tvText1"
-                android:id="@+id/extent_tvText1"
-                android:layout_below="@+id/extent_tvContent1"
-                android:layout_alignStart="@+id/extent_tvContent1"
                 android:textSize="10dp"
                 android:maxWidth="250dp"
                 android:layout_gravity="left"
                 android:gravity="left"
-                android:layout_marginTop="5dp" />
+                android:layout_marginTop="5dp"
+                android:textColor="#ffffff"/>
 
 
 
@@ -113,12 +89,13 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:layout_marginTop="10dp">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Website"
-                android:id="@+id/extent_tvContent2"
+                android:textColor="#ffffff"
               />
 
             <CheckBox
@@ -136,10 +113,9 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="@string/extent_tvText2"
-                android:id="@+id/extent_tvText2"
-
                 android:layout_marginTop="1dp"
-                android:textSize="10dp" />
+                android:textSize="10dp"
+                android:textColor="#ffffff"/>
 
 
             <TextView
@@ -147,12 +123,13 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Applications:"
-                android:id="@+id/extent_tvContent3"
-                android:layout_marginTop="15dp"/>
+                android:layout_marginTop="9dp"
+                android:textColor="#ffffff"/>
 
 <LinearLayout
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:layout_marginTop="-10dp"
 
     >
             <TextView
@@ -162,6 +139,7 @@
                 android:text="Windows"
                 android:layout_marginTop="5dp"
                 android:textSize="10dp"
+                android:textColor="#ffffff"
 
                 />
             <CheckBox
@@ -179,6 +157,7 @@
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:layout_marginTop="-12dp"
                 >
                 <TextView
                     android:layout_width="wrap_content"
@@ -187,7 +166,7 @@
                     android:text="Android"
                     android:layout_marginTop="5dp"
                     android:textSize="10dp"
-
+                    android:textColor="#ffffff"
                     />
                 <CheckBox
                     android:layout_width="wrap_content"
@@ -202,7 +181,8 @@
 
             <LinearLayout
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
+                android:layout_height="fill_parent"
+                android:layout_marginTop="-12dp">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -210,6 +190,7 @@
                     android:text="iOS"
                     android:layout_marginTop="5dp"
                     android:textSize="10dp"
+                    android:textColor="#ffffff"
                     />
                 <CheckBox
                     android:layout_width="wrap_content"
@@ -223,31 +204,100 @@
 
             <LinearLayout
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="Applications:"
-                    android:layout_marginTop="15dp"/>
+                    android:text="Physical Prototype"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="5dp"/>
                 
                 <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/extent_cbCheck3"
                     android:checked="false"
-                    android:layout_marginLeft="248dp"
+                    android:layout_marginLeft="113dp"
                     />
-
-
-
 
                 </LinearLayout>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="If applicable"
+                android:textColor="#ffffff"
+                android:layout_marginTop="3dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Patents"
+                android:textColor="#ffffff"
+                android:layout_marginTop="15dp"/>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="International"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="5dp"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:layout_marginLeft="184dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Local"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ffffff"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:layout_marginLeft="230dp"
+
+                    />
+
+            </LinearLayout>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:textSize="15sp"
+                android:id="@+id/bExtent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:background="#ffffff"
+                />
 
 
         </LinearLayout>
-    </ScrollView>
 
 </LinearLayout>
