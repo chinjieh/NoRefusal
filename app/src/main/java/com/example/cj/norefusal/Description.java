@@ -22,13 +22,13 @@ public class Description extends Activity {
             public void onClick(View view) {
 
 
-               // Intent a = new Intent(Description.this, Extent.class);
+
 
                 Intent slideactivity = new Intent(Description.this, Extent.class);
 
                 Bundle bndlanimation = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.animation1, R.anim.animation2).toBundle();
                 startActivity(slideactivity, bndlanimation);
-               // startActivity(a);
+
 
 
             }

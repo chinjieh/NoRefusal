@@ -22,12 +22,12 @@ public class Contact extends Activity{
             @Override
             public void onClick(View view) {
 
-               // Intent a = new Intent(Contact.this, End.class);
+
                 Intent slideactivity = new Intent(Contact.this, End.class);
 
                 Bundle bndlanimation = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.animation1, R.anim.animation2).toBundle();
                 startActivity(slideactivity, bndlanimation);
-                // startActivity(a);
+
 
 
             }

@@ -40,12 +40,13 @@ public class Extent extends Activity {
                 if (check1.isChecked() || check2.isChecked() || check3.isChecked() || check4.isChecked() || check5.isChecked()
                         || check6.isChecked() || check7.isChecked() || check8.isChecked() ){
 
-                   //Intent a = new Intent(Extent.this, Contact.class);
+
                     Intent slideactivity = new Intent(Extent.this, Contact.class);
 
                     Bundle bndlanimation = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.animation1, R.anim.animation2).toBundle();
+
                     startActivity(slideactivity, bndlanimation);
-                  //  startActivity(a);
+
                 }
                 else{
                     showPopUp();

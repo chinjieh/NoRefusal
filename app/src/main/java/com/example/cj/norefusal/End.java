@@ -20,8 +20,6 @@ public class End extends Activity {
             @Override
             public void onClick(View view) {
 
-
-                //ourClass = Class.forName("com.example.cj.norefusal.Description");
                 Intent a = new Intent(End.this, Main.class);
                 startActivity(a);
 
