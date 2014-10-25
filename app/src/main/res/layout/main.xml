@@ -117,20 +117,12 @@
                 android:textSize="25dp"
                 android:gravity="center"
                 android:layout_gravity="center"
-                android:layout_marginTop="65dp"
+                android:layout_marginTop="105dp"
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView4"
-                android:layout_marginTop="7dp"
-                android:textColor="#ffffff"
-                android:gravity="center"
-                android:layout_gravity="center"
-                android:text="Reverse Flushing Toilet Bowl" />
+
 
         </LinearLayout>
     </ScrollView>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#9B2335"
+    android:padding="20dp">
+
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:text="Past Revelations"
+        android:textSize="42sp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_marginTop="1dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Reverse Flushing Toilet Bowl\n\nAutomatic Skipping Rope\n\nVoice Changer App\n\nEmoji Creater App\n\nThe Cat Translator"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_marginTop="60dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+
+        />
+
+
+
+</LinearLayout>
