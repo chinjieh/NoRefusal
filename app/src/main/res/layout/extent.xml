@@ -10,7 +10,8 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:padding="20dp"
-            android:id="@+id/Layout1">
+            android:id="@+id/Layout1"
+            android:weightSum="1">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -52,12 +53,13 @@
                 android:text="Business Proposal"
                 android:textColor="#ffffff"/>
 
-            <CheckBox
+                <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/extent_cbCheck1"
                 android:checked="false"
-                android:layout_marginLeft="115dp" />
+                android:layout_marginLeft="115dp"
+                android:background="@android:drawable/checkbox_off_background" />
         </LinearLayout>
 
 
@@ -76,11 +78,11 @@
                 android:textColor="#ffffff"/>
 
 
-
-<LinearLayout
+            <LinearLayout
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:layout_marginTop="10dp">
+    android:layout_marginTop="5dp"
+    >
 
             <TextView
                 android:layout_width="wrap_content"
@@ -96,7 +98,7 @@
                 android:id="@+id/extent_cbCheck2"
                 android:checked="false"
                 android:layout_marginLeft="200dp"
-             />
+                android:background="@android:drawable/checkbox_off_background" />
 
             </LinearLayout>
 
@@ -115,13 +117,13 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Applications:"
-                android:layout_marginTop="9dp"
+                android:layout_marginTop="10dp"
                 android:textColor="#ffffff"/>
 
 <LinearLayout
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:layout_marginTop="-10dp"
+    android:layout_marginTop="0dp"
 
     >
             <TextView
@@ -139,7 +141,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/extent_cbCheck3"
                 android:checked="false"
-                android:layout_marginLeft="223dp"
+                android:layout_marginLeft="225dp"
+                android:background="@android:drawable/checkbox_off_background"
 
 
                 />
@@ -149,7 +152,7 @@
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:layout_marginTop="-12dp"
+                android:layout_marginTop="0dp"
                 >
                 <TextView
                     android:layout_width="wrap_content"
@@ -165,7 +168,8 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/extent_cbCheck4"
                     android:checked="false"
-                    android:layout_marginLeft="229dp"
+                    android:layout_marginLeft="231dp"
+                    android:background="@android:drawable/checkbox_off_background"
 
                     />
             </LinearLayout>
@@ -174,7 +178,7 @@
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:layout_marginTop="-12dp">
+                android:layout_marginTop="0dp">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -189,8 +193,8 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/extent_cbCheck5"
                     android:checked="false"
-                    android:layout_marginLeft="249dp"
-                    />
+                    android:layout_marginLeft="250dp"
+                    android:background="@android:drawable/checkbox_off_background" />
             </LinearLayout>
 
 
@@ -205,14 +209,15 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:text="Physical Prototype"
                     android:textColor="#ffffff"
-                    android:layout_marginTop="1dp"/>
+                    android:layout_marginTop="0dp"/>
                 
                 <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:id="@+id/extent_cbCheck6"
-                    android:layout_marginLeft="113dp"
+                    android:layout_marginLeft="114dp"
+                    android:background="@android:drawable/checkbox_off_background"
                     />
 
                 </LinearLayout>
@@ -223,14 +228,15 @@
                 android:textSize="10sp"
                 android:text="(If applicable)"
                 android:textColor="#ffffff"
-                android:layout_marginTop="3dp"/>
+                android:layout_marginTop="0dp"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Patents"
                 android:textColor="#ffffff"
-                android:layout_marginTop="15dp"/>
+                android:layout_marginTop="5dp"/>
 
 
             <LinearLayout
@@ -251,7 +257,8 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:id="@+id/extent_cbCheck7"
-                    android:layout_marginLeft="184dp"
+                    android:layout_marginLeft="186dp"
+                    android:background="@android:drawable/checkbox_off_background"
                     />
 
             </LinearLayout>
@@ -273,9 +280,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="false"
-                    android:layout_marginLeft="229dp"
+                    android:layout_marginLeft="231dp"
+                    android:background="@android:drawable/checkbox_off_background"
 
-                    />
+                    android:layout_marginTop="5dp" />
 
             </LinearLayout>
 
