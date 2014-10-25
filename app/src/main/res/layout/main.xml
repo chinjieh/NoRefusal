@@ -30,7 +30,7 @@
                 android:gravity="center"
                 android:layout_gravity="center"
                 android:textColor="#ffffff"
-
+                android:textStyle="bold"
                 />
 
             <TextView
@@ -40,7 +40,7 @@
                 android:id="@+id/main_tvProject"
                 android:textSize="15dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:textColor="#ffffff"
                 />
 
@@ -56,7 +56,7 @@
                 android:minWidth="200dp"
                 android:minHeight="8dp"
                 android:longClickable="false"
-                android:layout_marginTop="-5dp" />
+                android:layout_marginTop="5dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -72,7 +72,8 @@
                 android:gravity="center"
                 android:layout_gravity="center"
                 android:textColor="#ffffff"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="50dp"
+                android:textStyle="bold"
                 />
 
             <EditText
@@ -91,7 +92,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/main_etCatchPhrase"
                 android:hint="Catch phrase"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="5dp"
                 android:gravity="center"
                 android:layout_gravity="center"
                 android:textColor="#ffffff"
@@ -103,6 +104,7 @@
                 android:text="Next"
                 android:id="@+id/main_bNext"
                 android:layout_gravity="center"
+                android:background="#ffffff"
                 android:gravity="center"
                 android:layout_marginTop="10dp" />
 
@@ -114,15 +116,16 @@
                 android:textSize="25dp"
                 android:gravity="center"
                 android:layout_gravity="center"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="65dp"
                 android:textColor="#ffffff"
+                android:textStyle="bold"
                 />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView4"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="7dp"
                 android:textColor="#ffffff"
                 android:gravity="center"
                 android:layout_gravity="center"

@@ -15,34 +15,26 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="30sp"
                 android:text="How Far would we Go?"
                 android:layout_marginTop="-5dp"
                 android:gravity="center"
                 android:layout_gravity="center"
                 android:textColor="#ffffff"
+                android:textStyle="bold"
                 />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:layout_gravity="center"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textSize="15dp"
-                android:text="@string/extent_tvSubheader"
-                android:textColor="#ffffff"
-                android:layout_marginTop="1dp"/>
+
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="@string/extent_tvSubheader2"
-                android:textSize="15dp"
+                android:textSize="13dp"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="-3sp"
                 android:textColor="#ffffff"
                 />
 
@@ -137,7 +129,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="Windows"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="0dp"
                 android:textSize="10dp"
                 android:textColor="#ffffff"
 
@@ -164,7 +156,7 @@
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:text="Android"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="0dp"
                     android:textSize="10dp"
                     android:textColor="#ffffff"
                     />
@@ -188,7 +180,7 @@
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:text="iOS"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="0dp"
                     android:textSize="10dp"
                     android:textColor="#ffffff"
                     />
@@ -197,7 +189,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/extent_cbCheck5"
                     android:checked="false"
-                    android:layout_marginLeft="248dp"
+                    android:layout_marginLeft="249dp"
                     />
             </LinearLayout>
 
@@ -213,7 +205,7 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:text="Physical Prototype"
                     android:textColor="#ffffff"
-                    android:layout_marginTop="5dp"/>
+                    android:layout_marginTop="1dp"/>
                 
                 <CheckBox
                     android:layout_width="wrap_content"
@@ -228,8 +220,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="If applicable"
+                android:textSize="10sp"
+                android:text="(If applicable)"
                 android:textColor="#ffffff"
                 android:layout_marginTop="3dp"/>
             <TextView
@@ -281,7 +273,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="false"
-                    android:layout_marginLeft="230dp"
+                    android:layout_marginLeft="229dp"
 
                     />
 
@@ -297,6 +289,7 @@
                 android:layout_gravity="center_horizontal"
                 android:gravity="center"
                 android:background="#ffffff"
+                android:layout_marginTop="10dp"
                 />
 
 
