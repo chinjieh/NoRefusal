@@ -22,7 +22,7 @@ public class Description extends Activity {
 
 
                 //ourClass = Class.forName("com.example.cj.norefusal.Description");
-                Intent a = new Intent(Description.this, Contact.class);
+                Intent a = new Intent(Description.this, Extent.class);
                 startActivity(a);
 
 

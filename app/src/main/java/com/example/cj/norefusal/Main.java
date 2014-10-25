@@ -23,7 +23,7 @@ public class Main extends Activity {
                 Class ourClass = null;
 
                 //ourClass = Class.forName("com.example.cj.norefusal.Description");
-                Intent a = new Intent(Main.this, Extent.class);
+                Intent a = new Intent(Main.this, Description.class);
                 startActivity(a);
 
 
