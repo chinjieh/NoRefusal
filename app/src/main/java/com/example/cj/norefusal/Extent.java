@@ -1,6 +1,7 @@
 package com.example.cj.norefusal;
 
 import android.app.Activity;
+import android.app.ActivityOptions;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -24,7 +25,7 @@ public class Extent extends Activity {
         setContentView(R.layout.extent);
 
         Button next = (Button) findViewById(R.id.bExtent);
-        Button popup = (Button) findViewById (R.id.popup);
+
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,8 +40,12 @@ public class Extent extends Activity {
                 if (check1.isChecked() || check2.isChecked() || check3.isChecked() || check4.isChecked() || check5.isChecked()
                         || check6.isChecked() || check7.isChecked() || check8.isChecked() ){
 
-                    Intent a = new Intent(Extent.this, Contact.class);
-                    startActivity(a);
+                   //Intent a = new Intent(Extent.this, Contact.class);
+                    Intent slideactivity = new Intent(Extent.this, Contact.class);
+
+                    Bundle bndlanimation = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.animation1, R.anim.animation2).toBundle();
+                    startActivity(slideactivity, bndlanimation);
+                  //  startActivity(a);
                 }
                 else{
                     showPopUp();
