@@ -75,9 +75,6 @@ public class Test extends Activity {
             JSONObject json = jsonParser.makeHttpRequest(url_create_product,
                     "POST", params);
 
-            // check log cat fro response
-            Log.d("Create Response", json.toString());
-
             // check for success tag
             try {
                 int success = json.getInt(TAG_SUCCESS);
