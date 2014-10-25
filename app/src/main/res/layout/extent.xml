@@ -4,48 +4,51 @@
     android:layout_height="fill_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="How Far would we Go?"
-        android:id="@+id/extent_tvHeader"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="31dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textSize="15dp"
-        android:text="@string/extent_tvSubheader"
-        android:id="@+id/extent_tvSubheader"
-        android:layout_marginTop="27dp"
-        android:layout_below="@+id/extent_tvHeader"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/extent_tvSubheader2"
-        android:id="@+id/extent_tvSubheader2"
-        android:textSize="15dp"
-        android:layout_below="@+id/extent_tvSubheader"
-        android:layout_centerHorizontal="true" />
-
     <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:id="@+id/scrollView"
-        android:layout_below="@+id/extent_tvSubheader2"
-        android:layout_marginTop="39dp" >
+        android:layout_alignTop="@+id/extent_tvHeader"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="0dp">
 
         <RelativeLayout
             android:orientation="vertical"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
+            android:layout_height="fill_parent"
+            android:id="@+id/">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="How Far would we Go?"
+                android:id="@+id/extent_tvHeader"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="31dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="15dp"
+                android:text="@string/extent_tvSubheader"
+                android:id="@+id/extent_tvSubheader"
+                android:layout_marginTop="27dp"
+                android:layout_below="@+id/extent_tvHeader"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/extent_tvSubheader2"
+                android:id="@+id/extent_tvSubheader2"
+                android:textSize="15dp"
+                android:layout_below="@+id/extent_tvSubheader"
+                android:layout_centerHorizontal="true" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -53,9 +56,9 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Business Proposal"
                 android:id="@+id/extent_tvContent1"
-                android:layout_alignTop="@+id/scrollView"
-                android:layout_alignStart="@+id/extent_tvSubheader2"
-                android:layout_marginLeft="30dp" />
+                android:layout_marginTop="36dp"
+                android:layout_below="@+id/extent_cbCheck3"
+                android:layout_alignStart="@+id/extent_tvText1" />
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -77,7 +80,66 @@
                 android:layout_below="@+id/extent_tvContent1"
                 android:layout_alignStart="@+id/extent_tvContent1"
                 android:textSize="10dp"
-                android:maxWidth="250dp" />
+                android:maxWidth="250dp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Website"
+                android:id="@+id/extent_tvContent2"
+                android:layout_marginTop="75dp"
+                android:layout_alignStart="@id/extent_tvContent1"
+                android:layout_below="@+id/extent_tvContent1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/extent_tvText2"
+                android:id="@+id/extent_tvText2"
+                android:layout_alignStart="@id/extent_tvContent2"
+                android:layout_marginTop="100dp"
+                android:textSize="10dp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/extent_cbCheck2"
+                android:checked="false"
+                android:layout_toEndOf="@id/extent_tvContent2"
+                android:layout_above="@+id/extent_tvText1"
+                android:layout_alignStart="@+id/extent_cbCheck1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Applications:"
+                android:id="@+id/extent_tvContent3"
+                android:layout_alignBottom="@+id/extent_tvContent2"
+                android:layout_alignStart="@+id/extent_tvContent2" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/extent_cbCheck3"
+                android:checked="false"
+                android:layout_alignBaseline="@+id/extent_tvText2"
+                android:layout_alignBottom="@+id/extent_tvText2"
+                android:layout_toEndOf="@+id/extent_cbCheck1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/extent_tvText3"
+                android:id="@+id/extent_tvText3"
+                android:layout_alignStart="@id/extent_tvContent2"
+                android:layout_marginTop="10dp"
+                android:textSize="10dp"
+                android:layout_below="@+id/extent_tvContent2" />
 
         </RelativeLayout>
     </ScrollView>
