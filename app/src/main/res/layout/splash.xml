@@ -5,6 +5,7 @@
     android:background="#4DBC90"
     >
 
+<<<<<<< HEAD
 
 
     <VideoView
@@ -14,5 +15,13 @@
         android:layout_gravity="center"
         android:gravity="center"
         />
+=======
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="asdasd"
+
+        android:layout_gravity="center" />
+>>>>>>> origin/master
 
 </LinearLayout>

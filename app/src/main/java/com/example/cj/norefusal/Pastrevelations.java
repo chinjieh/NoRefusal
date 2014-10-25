@@ -16,7 +16,7 @@ public class Pastrevelations extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.past_revelations);
 
-        Button next = (Button)findViewById(R.id.bPastRevmain);
+        Button next = (Button)findViewById(R.id.main_bNext);
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
