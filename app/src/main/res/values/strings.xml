@@ -4,7 +4,7 @@
     <string name="app_name">NoRefusal</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="extent_tvSubheader">We're willing to go as far as you want it to.</string>
+    <string name="extent_tvSubheader">We\'re willing to go as far as you want it to.</string>
     <string name="extent_tvSubheader2">Pick the features you want to see implemented.</string>
 
 
