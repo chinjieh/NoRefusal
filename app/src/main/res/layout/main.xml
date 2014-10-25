@@ -73,7 +73,7 @@
                 android:layout_gravity="center"
                 android:textColor="#ffffff"
                 android:layout_marginTop="20dp"
-                android:layout_gravity="left" />
+                />
 
             <EditText
                 android:layout_width="300dp"

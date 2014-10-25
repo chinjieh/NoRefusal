@@ -17,7 +17,7 @@
         android:gravity="center"
         android:layout_marginTop="25dp"
         android:background="#ffffff"
-        android:textColour="#000000"
+        android:textColor="#000000"
         android:textSize = "15dp"
         android:paddingLeft="5dp"
         android:paddingRight="5dp" />

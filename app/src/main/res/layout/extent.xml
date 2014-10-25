@@ -17,7 +17,7 @@
             android:orientation="vertical"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:id="@+id/">
+            android:id="@+id/Layout1">
 
             <TextView
                 android:layout_width="wrap_content"
