@@ -25,6 +25,7 @@ public class Contact extends Activity{
             @Override
             public void onClick(View view) {
 
+<<<<<<< HEAD
                 EditText edittext = (EditText) findViewById(R.id.etEmail);
                 EditText contacttext = (EditText)findViewById(R.id.etPhone);
 
@@ -44,6 +45,14 @@ public class Contact extends Activity{
                // Intent a = new Intent(Contact.this, End.class);
 
                 // startActivity(a);
+=======
+
+                Intent slideactivity = new Intent(Contact.this, End.class);
+
+                Bundle bndlanimation = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.animation1, R.anim.animation2).toBundle();
+                startActivity(slideactivity, bndlanimation);
+
+>>>>>>> origin/master
 
 
             }

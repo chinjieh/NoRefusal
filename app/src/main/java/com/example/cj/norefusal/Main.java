@@ -1,6 +1,7 @@
 package com.example.cj.norefusal;
 
 import android.app.Activity;
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -20,11 +21,13 @@ public class Main extends Activity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Class ourClass = null;
 
-                //ourClass = Class.forName("com.example.cj.norefusal.Description");
-                Intent a = new Intent(Main.this, Extent.class);
-                startActivity(a);
+                Intent slideactivity = new Intent(Main.this, Description.class);
+
+                Bundle bndlanimation = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.animation1, R.anim.animation2).toBundle();
+
+                startActivity(slideactivity, bndlanimation);
+
 
 
             }
