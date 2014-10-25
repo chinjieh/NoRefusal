@@ -32,9 +32,18 @@
         android:layout_marginTop="60dp"
         android:textColor="#ffffff"
         android:textStyle="bold"
-
         />
 
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Back to Main Menu"
+        android:textSize="15sp"
+        android:layout_marginTop="60dp"
+        android:background="#ffe72538"
+        android:textColor="#ffffff"
+        android:id="@+id/bPastRev"
+        android:layout_gravity="center_horizontal" />
 
 
 </LinearLayout>
