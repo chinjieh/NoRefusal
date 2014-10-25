@@ -1,6 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-</LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="How Far would we Go?"
+        android:id="@+id/extent_tvHeader"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="15dp"
+        android:text="@string/extent_tvSubheader"
+        android:id="@+id/extent_tvSubheader"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/extent_tvHeader"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:choiceMode="none"
+        android:divider="#ff986cff"
+        android:dividerHeight="4dp"
+        android:drawSelectorOnTop="false"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/extent_tvSubheader"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/extent_tvSubheader2"
+        android:id="@+id/extent_tvSubheader2"
+        android:textSize="15dp"
+        android:layout_below="@+id/extent_tvSubheader"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
