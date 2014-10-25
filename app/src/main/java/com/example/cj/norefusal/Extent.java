@@ -24,7 +24,6 @@ public class Extent extends Activity {
         setContentView(R.layout.extent);
 
         Button next = (Button) findViewById(R.id.bExtent);
-        Button popup = (Button) findViewById (R.id.popup);
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

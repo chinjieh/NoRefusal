@@ -55,7 +55,8 @@
         android:background="#FFFFFF"
 
         android:textColorHint="#d3d3d3"
-        android:textIsSelectable="true" />
+        android:textIsSelectable="true"
+        android:inputType="textEmailAddress" />
 
     <TextView
         android:id="@+id/tvPhoneContact"
