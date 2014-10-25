@@ -1,41 +1,74 @@
 package com.example.cj.norefusal;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.res.Configuration;
+import android.content.res.Resources;
+import android.media.MediaPlayer;
+import android.media.MediaPlayer.OnPreparedListener;
+import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
+import android.widget.MediaController;
+import android.widget.VideoView;
 
-/**
- * Created by User on 25/10/2014.
- */
 public class Splash extends Activity {
+
+   public VideoView myVideoView;
+
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash);
 
 
+        //initialize the VideoView
+        myVideoView = (VideoView) findViewById(R.id.videoView1);
 
-        Thread timer = new Thread() {
-            public void run() {
 
-                try {
-                    sleep(3500);
 
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                } finally {
-                    Intent openMain = new Intent(Splash.this, Main.class);
-                    startActivity(openMain);
+
+        try {
+
+
+
+            Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.startup_page);
+
+            myVideoView.setVideoURI(uri);
+            myVideoView.start();
+
+
+            myVideoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+
+                public void onCompletion(MediaPlayer mp) {
+
+                    Splash.this.runOnUiThread(new Runnable() {
+
+                        @Override
+                        public void run() {
+                            // TODO Auto-generated method stub
+                            Intent main = new Intent(Splash.this, Main.class);
+                            Splash.this.startActivity(main);
+                            Splash.this.finish();
+                        }
+                    });
                 }
 
-            }
-        };
-        timer.start();
+            });
+        } catch (Exception e) {
+            e.printStackTrace();
+        }finally{
+          //  Intent openNext = new Intent(Splash.this, Main.class);
+          //  startActivity(openNext);
+
+        }
+
+
+
+
+
     }
 
-    @Override
-    protected void onPause() {
-        super.onPause();
-        finish();
-    }
 }
