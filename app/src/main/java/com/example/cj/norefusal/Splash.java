@@ -24,7 +24,7 @@ public class Splash extends Activity {
         setContentView(R.layout.splash);
 
 
-        //initialize the VideoView
+
         myVideoView = (VideoView) findViewById(R.id.videoView1);
 
 
@@ -34,7 +34,7 @@ public class Splash extends Activity {
 
 
 
-            Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.startup_page);
+            Uri uri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.newes);
 
             myVideoView.setVideoURI(uri);
             myVideoView.start();
